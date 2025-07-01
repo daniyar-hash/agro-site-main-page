@@ -2042,6 +2042,7 @@ h4, .h4 {
 .categories__item {
   width: 340px;
   height: 300px;
+  opacity: 0.8;
 }
 .categories__item:first-child {
   background: url("../img/category/pestytsidy.jpg") center/cover no-repeat;
