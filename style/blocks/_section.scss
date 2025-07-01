@@ -5,6 +5,7 @@
    padding-bottom: var(--section-large-padding-y);
 
 
+
    @include mobile{
       --section-base-padding-y:50px;
       --section-large-padding-y:50px;
@@ -12,13 +13,17 @@
    }
 
 
-
+   &:has(.category){
+       color: var(--color-dark);
+   }
 
    &:has(.about-us){
         background: linear-gradient(rgba(14,14,14,0.6), rgba(14,14,14,0.6)),
                 url("../img/about-us/bg.png") 0 0 / cover no-repeat;
         min-height: 670px;
    }
+
+
 
    &:has(.news){
 
