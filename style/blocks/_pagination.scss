@@ -1,0 +1,35 @@
+.pagination{
+    text-align: center;
+    color: inherit;
+    margin-top: auto;
+
+    &__list{
+        display: flex;
+        column-gap: 12px;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+
+    &__item-link{
+        display: inline-block;
+        width: 112px;
+        height: 54px;
+        background-color: transparent;
+        border-bottom: var(--border);
+        border-color: var(--color-light);
+
+        &.active{
+            border-color: var(--color-red-alt);
+        }
+
+        @include tablet{
+            width: 80px;
+        }
+
+        @include mobile-s{
+            width: 50px;
+        }
+    }
+}

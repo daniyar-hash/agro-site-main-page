@@ -1,0 +1,81 @@
+.banner{
+    height: 100vh;
+    background: url("../img/banner-bg.jpg") center center/cover no-repeat ;
+
+    --section-base-padding-y:100px;
+    --section-large-padding-y:58px;
+
+
+    &__inner{
+        height: 100%;
+    }
+
+    &__body{
+      
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+     
+
+
+        @include tablet{
+            padding-top: 70px;
+            padding-bottom: 0;
+        }
+
+        @include mobile-s{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+           
+        }
+    }
+
+
+    &__content{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+
+
+        @include mobile-s{
+            align-items: center;
+        }
+
+
+    }
+
+    &__title{
+        max-width: 586px;
+     
+
+
+        &:not(:last-child){
+            margin-bottom: 52px;
+
+            @include tablet{
+                margin-bottom: 40px;
+            }
+
+       
+        }
+
+      
+    }
+
+    &__button{
+
+        @include tablet{
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        @include mobile-s{
+            align-self: center;
+        }
+       
+    }
+}
+
