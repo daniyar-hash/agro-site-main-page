@@ -6,10 +6,6 @@
     --section-large-padding-y:0;
 
 
-
-    
-
-
     @include tablet{
         min-height: 230px;
         display: flex; //ii
@@ -17,9 +13,17 @@
 
     }
 
-    @include mobile {
-        min-height: 190px;
+    &.section{
+
+         @include mobile {
+            min-height: 190px;
+            --section-base-padding-y:0;
+            --section-large-padding-y:0;
+          }
+
     }
+    
+   
 
     &__body{
 

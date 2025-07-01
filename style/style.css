@@ -336,6 +336,7 @@ h4, .h4 {
   .header__inner {
     min-height: 80px;
     padding-top: 10px;
+    justify-content: space-between;
   }
 }
 @media (max-width: 767px) {
@@ -353,6 +354,7 @@ h4, .h4 {
 @media (max-width: 1023px) {
   .header__logo {
     flex-shrink: 0;
+    margin-right: auto;
   }
 }
 .header__menu {
@@ -406,6 +408,7 @@ h4, .h4 {
 @media (max-width: 1023px) {
   .header__menu-link {
     padding-inline: 4px;
+    font-size: clamp(12px, 0.8536585366vw, 14px);
   }
 }
 .header__button {
@@ -415,13 +418,17 @@ h4, .h4 {
   align-self: center;
   margin-left: auto;
   flex-shrink: 0;
-  font-size: 12px;
 }
 @media (max-width: 1023px) {
   .header__button {
-    align-self: center;
     margin-right: 0;
     padding-inline: 6px;
+    font-size: clamp(10px, 0.7317073171vw, 12px);
+    width: unset;
+    max-width: 168px;
+    height: auto;
+    margin-left: auto;
+    flex: 1;
   }
 }
 .header__icons-wrapper {
@@ -454,9 +461,9 @@ h4, .h4 {
   padding: 4px;
 }
 @media (max-width: 1023px) {
-  .header-cart__link {
+  .header-cart__link svg {
+    flex-shrink: 0;
     width: 26px;
-    aspect-ratio: 1;
   }
 }
 .header-cart__count {
@@ -688,8 +695,10 @@ h4, .h4 {
   }
 }
 @media (max-width: 767px) {
-  .features {
+  .features.section {
     min-height: 190px;
+    --section-base-padding-y:0;
+    --section-large-padding-y:0;
   }
 }
 @media (max-width: 1023px) {

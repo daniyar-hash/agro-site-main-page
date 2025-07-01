@@ -28,6 +28,7 @@
         @include tablet{
                  min-height: 80px;
                  padding-top: 10px;
+                 justify-content: space-between;
                 
                 
         }
@@ -36,7 +37,7 @@
 
         @include mobile{
                 &.container{
-            padding-inline: 5px;
+                 padding-inline: 5px;
         }
       }
 
@@ -52,6 +53,7 @@
 
         @include tablet{
             flex-shrink: 0;
+            margin-right:auto;
       
         }
 
@@ -113,6 +115,7 @@
 
             @include tablet{
                 padding-inline: 4px;
+                @include fluid-text(14,12);
             }
           
     }
@@ -126,13 +129,17 @@
         align-self: center;
         margin-left: auto;
         flex-shrink: 0;
-        font-size: 12px;
         
 
           @include tablet{
-               align-self: center;
                margin-right: 0;
                padding-inline: 6px;
+               @include fluid-text(12,10);
+               width: unset;
+               max-width: 168px;
+               height: auto;
+               margin-left: auto;
+               flex:1;
 
           }
 
@@ -171,11 +178,13 @@
             align-items: center;
             padding: 4px;
 
-            @include tablet{
-               
-                width: 26px;
-                aspect-ratio: 1;
+            & svg{
+                @include tablet{
+                    flex-shrink: 0;
+                    width: 26px;
+                }
             }
+
          
         }
 
