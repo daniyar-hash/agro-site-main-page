@@ -10,7 +10,7 @@
 
 
     &.transparent{
-            opacity: 85%;
+            opacity: 50%;
     }
 
     &.solid{
@@ -47,9 +47,10 @@
         width: 132px;
         height: 58px;
         margin-right: auto;
-        display: inline-block;
+        display: flex;
         flex-shrink: 0;
 
+     
 
         @include tablet{
             flex-shrink: 0;

@@ -235,6 +235,8 @@ svg * {
   --color-gray:#EDEDED;
   --color-dark-gray:#1D1D1D;
   --color-red-alt:#C53720;
+  --color-green:#5d8c56;
+  --color-green-alt:#159446;
   --border: 4px solid #c53720;
   --container-width:1128px;
   --container-padding-x:20px;
@@ -321,7 +323,7 @@ h4, .h4 {
   z-index: 10;
 }
 .header.transparent {
-  opacity: 85%;
+  opacity: 50%;
 }
 .header.solid {
   opacity: 1;
@@ -348,7 +350,7 @@ h4, .h4 {
   width: 132px;
   height: 58px;
   margin-right: auto;
-  display: inline-block;
+  display: flex;
   flex-shrink: 0;
 }
 @media (max-width: 1023px) {
@@ -585,7 +587,7 @@ h4, .h4 {
 }
 
 .banner {
-  background: url("../img/banner-bg.jpg") center center/cover no-repeat;
+  background: url("../img/banner-2.jpeg") center center/100% 100% no-repeat;
   --section-base-padding-y:100px;
   --section-large-padding-y:58px;
 }
@@ -981,7 +983,7 @@ h4, .h4 {
 }
 
 .logo svg *[fill] {
-  fill: var(--color-light);
+  fill: var(--color-green-alt);
 }
 .logo svg path.red-line {
   fill: var(--color-red-alt);
