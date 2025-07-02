@@ -81,14 +81,10 @@
        &__list-item{
         width: 100%;
         height: 500px;
-        //aspect-ratio: 16 / 9;
-        background-size: 100% 500px;
-       // background-position: center top;
+        background-size: cover;
+        background-position: bottom;
         background-repeat: no-repeat;
         display: block;
-        flex-direction: column;
-        justify-content: center;
-        align-items: start;
         padding-top: 150px;
         text-transform: uppercase;
 
@@ -105,10 +101,12 @@
 
          &.banner--3{
             background-image: url('../../../agro-site-main-page/img/banner-3.jpg');
+                background-position: bottom;
         }
 
          &.banner--4{
             background-image: url('../../../agro-site-main-page/img/banner-4.jpg');
+                background-position: center;
         }
 
     }
