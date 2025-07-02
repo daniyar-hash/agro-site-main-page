@@ -130,26 +130,69 @@
     </header>
     <main class="content">
         <section class="banner section">
-            <div class="banner__inner container">
+            <div class="banner__inner ">
+                <h1 class="visually-hidden">Агрохимикаты</h1>
                 <div class="banner__body">
-                    <div class="banner__content">
-                        <h1 class="banner__title">НАДЕЖНЫЕ, <br> КАЧЕСТВЕННЫЕ <br> АККУМУЛЯТОРЫ</h1>
-                        <a class="banner__button button button-medium" href="/" >ПЕРЕЙТИ В КАТАЛОГ</a>
-                    </div>
+                    <input type="radio" id="btn1" name="pagination__input"  value="number-1" checked>
+                    <input type="radio" id="btn2" name="pagination__input"  value="number-2">
+                    <input type="radio" id="btn3" name="pagination__input"  value="number-3">
+                    <input type="radio" id="btn4" name="pagination__input"  value="number-4">
+
+
+                    <ul class="banner__list slider">
+                        <li class="banner__list-item banner--1 slider ">
+                            <div class="container">
+                                <h2 class="slider__title">First banner</h2>
+                                <a class="slider__button button button-medium" href="/" >ПЕРЕЙТИ В КАТАЛОГ</a>
+                            </div>
+                        </li>
+                        <li class="banner__list-item banner--2 slider">
+                            <div class="container">
+                                <h2 class="slider__title">Second banner</h2>
+                                <a class="slider__button button button-medium" href="/" >ПЕРЕЙТИ В КАТАЛОГ</a>
+                            </div>
+                        </li>
+                        <li class="banner__list-item banner--3 slider">
+                            <div class="container">
+                                <h2 class="slider__title">Third banner</h2>
+                                <a class="slider__button button button-medium" href="/" >ПЕРЕЙТИ В КАТАЛОГ</a>
+                            </div>
+                        </li>
+                         <li class="banner__list-item banner--4 slider">
+                            <div class="container">
+                                <h2 class="slider__title">Foufth banner</h2>
+                                <a class="slider__button button button-medium" href="/" >ПЕРЕЙТИ В КАТАЛОГ</a>
+                            </div>
+                        </li>
+                    </ul>
+
                     <div class="banner__pagination pagination">
                         <ul class="pagination__list">
                             <li class="pagination__item ">
-                                <a href="" class="pagination__item-link active"></a>
+                                <label for="btn1"   class="pagination__label active" tabindex="0"
+                                   onkeydown="if(event.key === 'Enter' || event.key === ' ') this.click()">
+                                    <span class="pagination__icon visually-hidden">Кнопка сдайдер-1</span>
+                                </label>
                             </li>
-                             <li class="pagination__item">
-                                <a href="" class="pagination__item-link"></a>
+                            <li class="pagination__item ">
+                               <label for="btn2"   class="pagination__label" tabindex="0"
+                                   onkeydown="if(event.key === 'Enter' || event.key === ' ') this.click()">
+                                    <span class="pagination__icon visually-hidden">Кнопка сдайдер-2</span>
+                                </label>
                             </li>
-                              <li class="pagination__item">
-                                <a href="" class="pagination__item-link"></a>
+                            <li class="pagination__item ">
+                                <label for="btn3"   class="pagination__label" tabindex="0"
+                                   onkeydown="if(event.key === 'Enter' || event.key === ' ') this.click()">
+                                    <span class="pagination__icon visually-hidden">Кнопка сдайдер-3</span>
+                                </label>
                             </li>
-                              <li class="pagination__item">
-                                <a href="" class="pagination__item-link"></a>
+                            <li class="pagination__item ">
+                               <label for="btn4"   class="pagination__label" tabindex="0"
+                                   onkeydown="if(event.key === 'Enter' || event.key === ' ') this.click()">
+                                    <span class="pagination__icon visually-hidden">Кнопка сдайдер-4</span>
+                                </label>
                             </li>
+
                         </ul>
                     </div>
                 </div>

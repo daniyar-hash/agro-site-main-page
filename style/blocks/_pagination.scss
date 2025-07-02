@@ -2,6 +2,11 @@
     text-align: center;
     color: inherit;
     margin-top: auto;
+    position: absolute;
+
+    bottom: 10%;
+    left:50%;
+    translate: -50%;
 
     &__list{
         display: flex;
@@ -9,20 +14,26 @@
         align-items: center;
         justify-content: center;
 
+
     }
 
 
-    &__item-link{
+    &__label{
         display: inline-block;
         width: 112px;
         height: 54px;
         background-color: transparent;
         border-bottom: var(--border);
         border-color: var(--color-light);
+        cursor: pointer;
 
-        &.active{
-            border-color: var(--color-red-alt);
-        }
+
+
+
+
+        // &.active{
+        //     border-color: var(--color-red-alt);
+        // }
 
         @include tablet{
             width: 80px;
@@ -33,3 +44,6 @@
         }
     }
 }
+
+
+

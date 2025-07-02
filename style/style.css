@@ -348,7 +348,7 @@ h4, .h4 {
 }
 .header__logo {
   width: 132px;
-  height: 58px;
+  height: 70px;
   margin-right: auto;
   display: flex;
   flex-shrink: 0;
@@ -587,17 +587,41 @@ h4, .h4 {
 }
 
 .banner {
-  background: url("../img/banner-2.jpeg") center center/100% 100% no-repeat;
-  --section-base-padding-y:100px;
-  --section-large-padding-y:58px;
-}
-.banner__inner {
-  height: 100%;
+  --section-base-padding-y:0;
+  --section-large-padding-y:0;
 }
 .banner__body {
+  position: relative;
   height: 100%;
   display: flex;
   flex-direction: column;
+}
+.banner__body input[type=radio] {
+  display: none;
+}
+.banner__body #btn1:checked ~ .banner__list li:first-child {
+  display: block;
+}
+.banner__body #btn2:checked ~ .banner__list li:nth-child(2) {
+  display: block;
+}
+.banner__body #btn3:checked ~ .banner__list li:nth-child(3) {
+  display: block;
+}
+.banner__body #btn4:checked ~ .banner__list li:nth-child(4) {
+  display: block;
+}
+.banner__body #btn1:checked ~ .pagination .pagination__list li:first-child label[for=btn1] {
+  border-color: var(--color-red-alt);
+}
+.banner__body #btn2:checked ~ .pagination .pagination__list li:nth-child(2) label[for=btn2] {
+  border-color: var(--color-red-alt);
+}
+.banner__body #btn3:checked ~ .pagination .pagination__list li:nth-child(3) label[for=btn3] {
+  border-color: var(--color-red-alt);
+}
+.banner__body #btn4:checked ~ .pagination .pagination__list li:nth-child(4) label[for=btn4] {
+  border-color: var(--color-red-alt);
 }
 @media (max-width: 1023px) {
   .banner__body {
@@ -611,6 +635,33 @@ h4, .h4 {
     flex-direction: column;
     text-align: center;
   }
+}
+.banner__list-item {
+  width: 100%;
+  height: 500px;
+  background-size: 100% 500px;
+  background-repeat: no-repeat;
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding-top: 150px;
+  text-transform: uppercase;
+}
+.banner__list-item.banner--1 {
+  background-image: url("../../../agro-site-main-page/img/banner-1.jpeg");
+}
+.banner__list-item.banner--2 {
+  background-image: url("../../../agro-site-main-page/img/banner-2.jpeg");
+}
+.banner__list-item.banner--3 {
+  background-image: url("../../../agro-site-main-page/img/banner-3.jpg");
+}
+.banner__list-item.banner--4 {
+  background-image: url("../../../agro-site-main-page/img/banner-4.jpg");
+}
+.banner__list-item {
+  display: none;
 }
 .banner__content {
   flex: 1;
@@ -651,6 +702,10 @@ h4, .h4 {
   text-align: center;
   color: inherit;
   margin-top: auto;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  translate: -50%;
 }
 .pagination__list {
   display: flex;
@@ -659,24 +714,22 @@ h4, .h4 {
   align-items: center;
   justify-content: center;
 }
-.pagination__item-link {
+.pagination__label {
   display: inline-block;
   width: 112px;
   height: 54px;
   background-color: transparent;
   border-bottom: var(--border);
   border-color: var(--color-light);
-}
-.pagination__item-link.active {
-  border-color: var(--color-red-alt);
+  cursor: pointer;
 }
 @media (max-width: 1023px) {
-  .pagination__item-link {
+  .pagination__label {
     width: 80px;
   }
 }
 @media (max-width: 480px) {
-  .pagination__item-link {
+  .pagination__label {
     width: 50px;
   }
 }
@@ -2045,6 +2098,7 @@ h4, .h4 {
   width: 340px;
   height: 300px;
   opacity: 0.8;
+  border-radius: 20px;
 }
 .categories__item:first-child {
   background: url("../img/category/pestytsidy.jpg") center/cover no-repeat;

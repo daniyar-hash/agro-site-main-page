@@ -13,6 +13,12 @@
    }
 
 
+  // &:has(.banner){
+  //        --section-base-padding-y:0;
+  //        --section-large-padding-y:0;
+  //  }
+
+
    &:has(.category){
        color: var(--color-dark);
    }
