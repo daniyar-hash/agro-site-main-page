@@ -237,7 +237,7 @@ svg * {
   --color-red-alt:#C53720;
   --color-green:#5d8c56;
   --color-green-alt:#159446;
-  --border: 4px solid green;
+  --border: 4px solid #159446;
   --container-width:1128px;
   --container-padding-x:20px;
   --section-base-padding-y:88px;
@@ -403,7 +403,7 @@ h4, .h4 {
   height: 4px;
   bottom: 0;
   left: 50%;
-  background-color: var(--color-red-alt);
+  background-color: var(--color-green-alt);
   transition-duration: inherit;
   transform: translate(-50%);
 }
@@ -479,7 +479,7 @@ h4, .h4 {
   width: 32px;
   aspect-ratio: 1;
   border-radius: 50%;
-  background-color: var(--color-red-alt);
+  background-color: var(--color-green-alt);
 }
 @media (max-width: 1023px) {
   .header-cart__count::after {
@@ -502,12 +502,12 @@ h4, .h4 {
 }
 @media (hover: hover) {
   .burger-button:hover {
-    background-color: var(--color-red-alt);
+    background-color: var(--color-green-alt);
   }
 }
 @media (hover: none) {
   .burger-button:active {
-    background-color: var(--color-red-alt);
+    background-color: var(--color-green-alt);
   }
 }
 .burger-button::after {
@@ -534,12 +534,12 @@ h4, .h4 {
 }
 @media (hover: hover) {
   .cross-button:hover {
-    background-color: var(--color-red-alt);
+    background-color: var(--color-green-alt);
   }
 }
 @media (hover: none) {
   .cross-button:active {
-    background-color: var(--color-red-alt);
+    background-color: var(--color-green-alt);
   }
 }
 .cross-button::after, .cross-button::before {
@@ -612,16 +612,16 @@ h4, .h4 {
   display: block;
 }
 .banner__body #btn1:checked ~ .pagination .pagination__list li:first-child label[for=btn1] {
-  border-color: var(--color-red-alt);
+  border-color: var(--color-green-alt);
 }
 .banner__body #btn2:checked ~ .pagination .pagination__list li:nth-child(2) label[for=btn2] {
-  border-color: var(--color-red-alt);
+  border-color: var(--color-green-alt);
 }
 .banner__body #btn3:checked ~ .pagination .pagination__list li:nth-child(3) label[for=btn3] {
-  border-color: var(--color-red-alt);
+  border-color: var(--color-green-alt);
 }
 .banner__body #btn4:checked ~ .pagination .pagination__list li:nth-child(4) label[for=btn4] {
-  border-color: var(--color-red-alt);
+  border-color: var(--color-green-alt);
 }
 @media (max-width: 1023px) {
   .banner__body {
@@ -882,16 +882,16 @@ h4, .h4 {
   }
 }
 .features__menu-link:focus {
-  background-color: var(--color-red-alt);
+  background-color: var(--color-green-alt);
 }
 @media (hover: hover) {
   .features__menu-link:hover {
-    background-color: var(--color-red-alt);
+    background-color: var(--color-green-alt);
   }
 }
 @media (hover: none) {
   .features__menu-link:active {
-    background-color: var(--color-red-alt);
+    background-color: var(--color-green-alt);
   }
 }
 .features__menu-link.arrow {
@@ -1008,7 +1008,7 @@ h4, .h4 {
 .section__title {
   padding-bottom: 8px;
   padding-inline: 10px;
-  border-bottom: 4px solid var(--color-red-alt);
+  border-bottom: 4px solid var(--color-green-alt);
   line-height: 1.33;
   max-width: 856px;
   text-transform: uppercase;
@@ -1039,7 +1039,7 @@ h4, .h4 {
   fill: var(--color-green-alt);
 }
 .logo svg path.red-line {
-  fill: var(--color-red-alt);
+  fill: var(--color-green-alt);
 }
 @media (hover: hover) {
   .logo:hover {
@@ -1114,7 +1114,7 @@ h4, .h4 {
   color: var(--color-dark);
 }
 .products__title {
-  border-bottom: 4px solid var(--color-red-alt);
+  border-bottom: 4px solid var(--color-green-alt);
   max-width: 856px;
   padding-inline: 120px;
   line-height: 1.2;
@@ -1501,7 +1501,7 @@ h4, .h4 {
 }
 .service__images-wrapper .icon {
   position: absolute;
-  color: var(--color-red-alt);
+  color: var(--color-green-alt);
   display: inline-flex;
 }
 .service__images-wrapper .triangle-1 {
@@ -1675,7 +1675,7 @@ h4, .h4 {
   pointer-events: none;
 }
 .mask *[stroke] {
-  stroke: var(--color-red-alt);
+  stroke: var(--color-green-alt);
 }
 .mask *[fill] {
   fill: unset;
@@ -1766,7 +1766,7 @@ h4, .h4 {
 }
 .news__item-body {
   background-color: #1D1D1D;
-  color: var(--color-red-alt);
+  color: var(--color-green-alt);
   padding: 12px 20px 16px;
   display: flex;
   flex-direction: column;
@@ -1790,7 +1790,7 @@ h4, .h4 {
   justify-content: center;
   align-items: center;
   width: 100%;
-  color: var(--color-red-alt);
+  color: var(--color-green-alt);
 }
 .news__button-wrapper .scroll-actions {
   position: absolute;
@@ -1900,7 +1900,7 @@ h4, .h4 {
   }
 }
 .brand__scroll-actions {
-  color: var(--color-red-alt);
+  color: var(--color-green-alt);
 }
 .brand__scroll-actions button {
   position: absolute;
@@ -1955,7 +1955,7 @@ h4, .h4 {
   content: "";
   position: absolute;
   inset: 0;
-  background: url("../img/footer/footer-bg.png") center/cover no-repeat;
+  background: url("../img/footer/footer-bg.jpg") center/cover no-repeat;
   opacity: 0.2;
   z-index: -1;
 }
@@ -2062,7 +2062,7 @@ h4, .h4 {
        column-gap: 8px;
 }
 .footer-contacts__link svg *[fill] {
-  fill: var(--color-red-alt);
+  fill: var(--color-green-alt);
 }
 .footer-contacts__link.mail {
   text-transform: lowercase;
@@ -2070,6 +2070,7 @@ h4, .h4 {
 .footer__button {
   padding-block: 10px;
   font-size: 12px;
+  line-height: 1;
 }
 @media (max-width: 1280px) {
   .footer__button {

@@ -168,12 +168,12 @@
 
 
      &:focus{
-        background-color: var(--color-red-alt);
+        background-color: var( --color-green-alt);
 
      }    
        
     @include hover{
-        background-color: var(--color-red-alt);
+        background-color: var( --color-green-alt);
     }
 
         &.arrow{
