@@ -1,12 +1,28 @@
   const header = document.querySelector('.header');
+  const header__inner = document.querySelector('.header__inner');  
+  const header__logo = document.querySelector('.header__logo');
+  const header__container = document.querySelector('.header__container');
+
 
   function updateHeaderClass() {
-    if (window.scrollY > 80) {
+    if (window.scrollY > 60) {
       header.classList.remove('transparent');
       header.classList.add('solid');
+      header__inner.classList.add('flex-row');
+      header__container.classList.remove('container');
+      header__inner.classList.add('container');
+
+
+      header__logo.classList.add('logo-base');
     } else {
       header.classList.remove('solid');
       header.classList.add('transparent');
+      header__inner.classList.remove('flex-row');
+      header__inner.classList.remove('container');
+      header__container.classList.add('container');
+      header__logo.classList.remove('logo-base');
+
+      
     }
   }
 
