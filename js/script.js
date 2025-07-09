@@ -8,26 +8,29 @@
     if (window.scrollY > 60) {
       header.classList.remove('transparent');
       header.classList.add('solid');
-      header__inner.classList.add('flex-row');
+      header__inner.classList.remove('flex-column');
       header__container.classList.remove('container');
       header__inner.classList.add('container');
-
-
-      header__logo.classList.add('logo-base');
+      header__logo.classList.remove('logo-main');
     } else {
       header.classList.remove('solid');
       header.classList.add('transparent');
-      header__inner.classList.remove('flex-row');
+      header__inner.classList.add('flex-column');
       header__inner.classList.remove('container');
       header__container.classList.add('container');
-      header__logo.classList.remove('logo-base');
+      header__logo.classList.add('logo-main');
 
       
     }
   }
 
   // Проверка при загрузке страницы
-  window.addEventListener('load', updateHeaderClass);
+   window.addEventListener('load', updateHeaderClass);
+
+
+
+
+
 
   // Проверка при скролле
   window.addEventListener('scroll', updateHeaderClass);
