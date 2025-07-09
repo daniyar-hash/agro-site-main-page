@@ -7,7 +7,12 @@
     translate: -50%;
     width: 100%;
     z-index: 1;
-    transition-duration: var(--transition-duration);
+  
+
+
+    &:has(.flex-column){
+        background-color: unset;
+    }
 
 
     &.transparent{
@@ -20,18 +25,57 @@
 
     &__inner{
      
-        padding-top: 24px;
-        min-height: 100px;
+      //  padding-top: 24px;
+       // min-height: 100px;
         text-transform: uppercase;
         display: flex;
 
         &.flex-column{
             flex-direction: column;
+            align-items: center;
+            padding-top: 0;
 
-            .header__navigation-wrapper,
+
+             .header__navigation-wrapper{
+                background-color: var(--color-dark);
+                width: 100%;
+                display: block;
+             }
+
+        
             .header__container{
                 display: flex;
+                height: 70px;
+               // column-gap: 15px;
             }
+
+            .header__menu{
+                align-self:unset;
+                display: flex;
+                align-items: center;
+
+                &-list{
+                    align-items: center;
+                    height: 100%;
+                }
+
+                &-item{
+              
+                    height: 100%;
+                }
+
+                &-link{
+                    padding-block: 20px;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+
+                }
+
+            }
+   
+
+
         }
 
         @include tablet{
@@ -59,18 +103,16 @@
         flex-shrink: 0;
 
         &.logo-main{
-            width: 250px;
-            height: 190px;
+            width: 200px;
+            height: 150px;
             margin-right: unset;
             order: 1;
+
+
        
         }
      
-        @include tablet{
-            flex-shrink: 0;
-            margin-right:auto;
-      
-        }
+    
 
     }
 
@@ -83,12 +125,13 @@
     }
 
     &__menu{
-        align-self: end;
+     
 
         &-list{
                 display: flex;
                 column-gap: 12px;
                 justify-content: space-between;
+                height: 100%;
 
                 @include tablet{
                     column-gap: 5px;
@@ -97,6 +140,10 @@
             }
 
         &-item{
+
+            height: 100%;
+            display: flex;
+            position: relative;
             &:hover .header__catalog-aside{
                 display: block;
             }
@@ -106,10 +153,11 @@
             
         &-link{
                 position: relative;
-                display: inline-block;
+                display: flex;
+                align-items: center;
                 padding-inline:8px;
-                padding-top: 8px;
-                padding-bottom: 26px;
+                // padding-top: 8px;
+                // padding-bottom: 26px;
                 line-height: 1.4;
                 font-size: 16px;
             
@@ -162,6 +210,8 @@
           background-color: rgba($color: #000000, $alpha: 0.8);
           font-size: 12px;
           position: absolute;
+        //  border-radius: 10px;
+          top: 100%;
           width: 228px;
       
         }
@@ -179,7 +229,13 @@
             column-gap: 60px;
             border-bottom: 1px solid rgba(255,255,255,0.2);
             padding-block: 10px;
-            padding-left:20px;            
+            padding-left:20px;
+            
+            
+            &-icon{
+               @include flex-center;
+               height: 18px;
+            }
   
             
             @include hover{
@@ -191,6 +247,10 @@
 
         &-item{
             position: relative;
+
+            // &:hover{
+            //     background-color: #212f25;
+            // }
 
 
             &:hover .header__catalog-dropdown{
@@ -223,7 +283,7 @@
         
 
           @include tablet{
-               margin-right: 0;
+               margin-right: 10px;
                padding-inline: 6px;
                @include fluid-text(12,10);
                width: unset;
@@ -234,6 +294,27 @@
 
           }
 
+    }
+
+    &__social-link{
+        @include flex-center(true);
+        margin-right: 10px;
+
+   
+        svg path{
+            &.icon-whatsapp-1{
+                fill:#cfd8dc;
+            }
+
+                &.icon-whatsapp-2{
+                fill:#40c351;
+            }
+
+ 
+         
+             
+        }
+   
     }
 
     &__icons-wrapper{

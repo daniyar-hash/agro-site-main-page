@@ -10,7 +10,7 @@
 <body>
      <header class="header transparent">
         <div class="header__inner flex-column">
-            <a href="../agro-site-main-page" class="header__logo logo logo-main">
+            <a href="../agro-site-main-page" class="header__logo logo logo-main hidden-mobile">
                 <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 457.000000 296.000000"
                 preserveAspectRatio="xMidYMid meet">
@@ -129,7 +129,7 @@
                                         <li class="header__catalog-item">
                                             <a href="#" class="header__catalog-link">
                                                 <span class="header__catalog-text">Удобрения</span>
-                                                <span class="header__catalog-icon">
+                                                <span class="header__catalog-link-icon">
                                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M8 4L12 10L8 16" stroke="#1D1D1D" stroke-width="4"/>
                                                     </svg>
@@ -153,7 +153,7 @@
                                         <li class="header__catalog-item">
                                             <a href="#" class="header__catalog-link">
                                                 <span class="header__catalog-text">ПРочее</span>
-                                                <span class="header__catalog-icon">
+                                                <span class="header__catalog-link-icon">
                                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M8 4L12 10L8 16" stroke="#1D1D1D" stroke-width="4"/>
                                                     </svg>
@@ -198,6 +198,18 @@
                     <button class="header__button button hidden-mobile " type="button">
                     Заказать звонок
                     </button>
+                    <a href="https://wa.me/+77055774243?text=Здравствуйте%2C+у+меня+есть+вопрос" class="header__social-link whatsapp hidden-mobile">
+                      <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="50px" height="50px" 
+                       fill-rule="evenodd" clip-rule="evenodd"><path fill="#fff"
+                        d="M4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98c-0.001,0,0,0,0,0h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303z"/><path fill="#fff" d="M4.868,43.803c-0.132,0-0.26-0.052-0.355-0.148c-0.125-0.127-0.174-0.312-0.127-0.483l2.639-9.636c-1.636-2.906-2.499-6.206-2.497-9.556C4.532,13.238,13.273,4.5,24.014,4.5c5.21,0.002,10.105,2.031,13.784,5.713c3.679,3.683,5.704,8.577,5.702,13.781c-0.004,10.741-8.746,19.48-19.486,19.48c-3.189-0.001-6.344-0.788-9.144-2.277l-9.875,2.589C4.953,43.798,4.911,43.803,4.868,43.803z"/>
+                        <path fill="#cfd8dc" class="icon-whatsapp-1" d="M24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,4C24.014,4,24.014,4,24.014,4C12.998,4,4.032,12.962,4.027,23.979c-0.001,3.367,0.849,6.685,2.461,9.622l-2.585,9.439c-0.094,0.345,0.002,0.713,0.254,0.967c0.19,0.192,0.447,0.297,0.711,0.297c0.085,0,0.17-0.011,0.254-0.033l9.687-2.54c2.828,1.468,5.998,2.243,9.197,2.244c11.024,0,19.99-8.963,
+                        19.995-19.98c0.002-5.339-2.075-10.359-5.848-14.135C34.378,6.083,29.357,4.002,24.014,4L24.014,4z"/>
+                        <path fill="#40c351" class="icon-whatsapp-2" d="M35.176,12.832c-2.98-2.982-6.941-4.625-11.157-4.626c-8.704,0-15.783,7.076-15.787,15.774c-0.001,2.981,0.833,5.883,2.413,8.396l0.376,0.597l-1.595,5.821l5.973-1.566l0.577,0.342c2.422,1.438,5.2,2.198,8.032,2.199h0.006c8.698,0,15.777-7.077,15.78-15.776C39.795,19.778,38.156,15.814,35.176,12.832z"/><path fill="#fff" fill-rule="evenodd" d="M19.268,16.045c-0.355-0.79-0.729-0.806-1.068-0.82c-0.277-0.012-0.593-0.011-0.909-0.011c-0.316,0-0.83,0.119-1.265,0.594c-0.435,0.475-1.661,
+                        1.622-1.661,3.956c0,2.334,1.7,4.59,1.937,4.906c0.237,0.316,3.282,5.259,8.104,
+                        7.161c4.007,1.58,4.823,1.266,5.693,1.187c0.87-0.079,2.807-1.147,3.202-2.255c0.395-1.108,
+                        0.395-2.057,0.277-2.255c-0.119-0.198-0.435-0.316-0.909-0.554s-2.807-1.385-3.242-1.543c-0.435-0.158-0.751-0.237-1.068,0.238c-0.316,0.474-1.225,1.543-1.502,1.859c-0.277,0.317-0.554,0.357-1.028,0.119c-0.474-0.238-2.002-0.738-3.815-2.354c-1.41-1.257-2.362-2.81-2.639-3.285c-0.277-0.474-0.03-0.731,0.208-0.968c0.213-0.213,0.474-0.554,0.712-0.831c0.237-0.277,0.316-0.475,0.474-0.791c0.158-0.317,0.079-0.594-0.04-0.831C20.612,19.329,19.69,16.983,19.268,16.045z" clip-rule="evenodd"/>
+                       </svg>
+                    </a>
                     <button class="header__burger-menu  burger-button visible-mobile" type="button"
                             
                             onclick="mobileOverlay.showModal()"
@@ -217,7 +229,7 @@
             </div>
         </div>
     </header>
-    <main class="content">
+    <main class="content ">
         <section class="banner section">
             <div class="banner__inner ">
                 <h1 class="visually-hidden">Агрохимикаты</h1>
@@ -231,25 +243,25 @@
                     <ul class="banner__list slider">
                         <li class="banner__list-item banner--1 slider ">
                             <div class="container">
-                                <h2 class="slider__title">First banner</h2>
+                                <h2 class="slider__title visually-hidden">First banner</h2>
                                 <a class="slider__button button button-medium" href="/agro-site-catalog-page" >ПЕРЕЙТИ В КАТАЛОГ</a>
                             </div>
                         </li>
                         <li class="banner__list-item banner--2 slider">
                             <div class="container">
-                                <h2 class="slider__title">Second banner</h2>
+                                <h2 class="slider__title visually-hidden">Second banner</h2>
                                 <a class="slider__button button button-medium" href="/agro-site-catalog-page" >ПЕРЕЙТИ В КАТАЛОГ</a>
                             </div>
                         </li>
                         <li class="banner__list-item banner--3 slider">
                             <div class="container">
-                                <h2 class="slider__title">Third banner</h2>
+                                <h2 class="slider__title visually-hidden">Third banner</h2>
                                 <a class="slider__button button button-medium" href="/agro-site-catalog-page" >ПЕРЕЙТИ В КАТАЛОГ</a>
                             </div>
                         </li>
                          <li class="banner__list-item banner--4 slider">
                             <div class="container">
-                                <h2 class="slider__title">Foufth banner</h2>
+                                <h2 class="slider__title visually-hidden">Foufth banner</h2>
                                 <a class="slider__button button button-medium" href="/agro-site-catalog-page" >ПЕРЕЙТИ В КАТАЛОГ</a>
                             </div>
                         </li>
@@ -287,11 +299,11 @@
                 </div>
             </div>
         </section>
-      <section class=" section">
+        <section class=" section">
             <div class="section__inner container">
                  <header class="section__header">
                     <h2 class="section__title products__title">
-                      Популярные категории
+                      Наши предложения
                     </h2>
                  </header>
                  <div class="section__body categories">
@@ -360,39 +372,6 @@
                         </li>
                     </ul>
                  </div>
-            </div>
-      </section>
-
-        <section class="features  section">
-            <div class="features__body container">
-                <ul class="features__menu-list grid grid--4">
-                    <li class="features__menu-item">
-                        <a href="#" class="features__menu-link ">
-                            <img src="img/features/1.svg" alt="Card" class="features__menu-image" width="130" height="79" loading="lazy">
-                            <h3 class="features__menu-title h4">Наличный и безналичный расчет</h3>
-                        </a>
-                    </li>
-                        <li class="features__menu-item">
-                        <a href="#" class="features__menu-link ">
-                            <img src="img/features/2.svg" alt="Avatar" class="features__menu-image" width="84" height="92" loading="lazy">
-                            <h3 class="features__menu-title h4">Техническая помощь и <br>консультация</h3>
-                        </a>
-                    </li>
-                        <li class="features__menu-item">
-                        <a href="#" class="features__menu-link arrow">
-                            <img src="img/features/3.svg" alt="Settings" class="features__menu-image" width="76" height="93" loading="lazy">
-                            <h3 class="features__menu-title h4">Только качественная и проверенная продукция</h3>
-                        </a>
-                    </li>
-                        <li class="features__menu-item">
-                        <a href="#" class="features__menu-link arrow">
-                            <img src="img/features/4.svg" alt="Work schedule" class="features__menu-image" width="106" height="88">
-                            <h3 class="features__menu-title h4">Мы всегда на связи <br>с
-                                <time datetime="9:00/18:00">9:00 до 18:00</time> 
-                            !</h3>
-                        </a>
-                    </li>
-                </ul>
             </div>
         </section>
         <section class=" section products">
@@ -486,153 +465,6 @@
                     </ul>
                  </div>
             </div>
-        </section>
-        <section class="section service">
-            <div class="section__inner container">
-                <header class="section__header">
-                    <h2 class="section__title">Услуги</h2>
-                    <div class="section__description">
-                        <p>Менеджеры компании с радостью ответят на ваши вопросы и помогут с выбором продукции.</p>
-                    </div>
-                </header>
-                <div class="service__body">
-                    <div class="service__body-inner">
-                        <ul class="service__list">
-                            <li class="service__item">
-                                <a href="#" class="service__link current">
-                                       <div class="service__link-image-wrapper icons-wrapper">
-                                        <div class="icons-wrapper__bg">
-                                            <span class="icons-wrapper__avatar">
-                                               <svg width="85" height="94" viewBox="0 0 85 94" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M21 40V44C21 46.7614 23.2386 49 26 49H38" stroke="white" stroke-width="4"/>
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M54.2123 54.6685L56.0658 52.5908L57.443 55.0106L61.7382 62.5575L58.2618 64.5361L55.3438 59.409L47.7191 67.9562L47.743 67.9812L47.6858 68.043L54.3228 75.6888L51.3022 78.311L44.952 70.9955L38.1342 78.3587L35.1991 75.6411L42.257 68.0186L33.9346 59.2723L30.7096 64.5847L27.2904 62.5089L31.8719 54.962L33.2285 52.7275L35.0304 54.6212L44.9525 65.0487L54.2123 54.6685Z" fill="white" fill-opacity="0.5"/>
-                                                <path d="M11.6565 72.7907C6.01374 78 3.42748 87.5504 3 92H45L29.6107 64C25.8702 64.5426 17.2992 67.5814 11.6565 72.7907Z" stroke="white" stroke-width="4"/>
-                                                <path d="M60.3893 64C64.1298 64.5426 72.7008 67.5814 78.3435 72.7907C79.5275 73.8837 80.5769 75.1678 81.5 76.5559L66.5 92H45L60.3893 64Z" stroke="white" stroke-width="4"/>
-                                                <path d="M45 8C54.6058 8 62.3 15.8894 62.1221 25.4346L62.1074 25.8906L61.3242 43.3896C60.9334 52.1217 53.7407 59 45 59C36.3959 59 29.291 52.3351 28.6982 43.7979L28.6758 43.3896L27.8926 25.8906C27.4563 16.142 35.2417 8 45 8Z" stroke="white" stroke-width="4"/>
-                                                <path d="M27.5 25C27.5 25 31.7884 19.5199 36.8448 18.3243C44.4712 16.5209 44.181 22.6617 55.3448 26.3317C58.078 27.2302 62 27 62 27" stroke="white" stroke-opacity="0.5" stroke-width="4"/>
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M72.9206 34.1516C73.0182 31.7329 72.2945 29.4714 70.9978 27.6363C70.8176 12.4893 59.3921 0 45 0C30.9108 0 19.6647 11.9691 19.0284 26.6835C17.2618 28.658 16.2315 31.2952 16.3468 34.1516L16.3684 34.688C16.6036 40.5167 21.5193 45.0512 27.3481 44.816L27.1868 40.8193C23.5654 40.9654 20.5113 38.1481 20.3652 34.5268L20.3435 33.9903C20.1974 30.369 23.0147 27.3148 26.6361 27.1687L26.4748 23.1719C25.3751 23.2163 24.3215 23.4273 23.3372 23.7796C25.1745 12.4349 34.2888 4 45 4C55.8103 4 64.9941 12.5918 66.7119 24.0954C65.5117 23.5534 64.1893 23.2283 62.7926 23.1719L62.6314 27.1687C66.2528 27.3148 69.07 30.369 68.9239 33.9903L68.9023 34.5268C68.7561 38.1481 65.702 40.9654 62.0806 40.8193L61.9194 44.816C67.7481 45.0512 72.6638 40.5167 72.899 34.688L72.9206 34.1516Z" fill="white"/>
-                                                <rect x="38.0026" y="45.8916" width="10.6774" height="6.24404" rx="3.12202" transform="rotate(0.400125 38.0026 45.8916)" stroke="white" stroke-width="4"/>
-                                                </svg>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <h3 class="service__link-title h4">Бесплатная консультация специалиста</h3>
-                                    <div class="service__link-description">Поможем с выбором аккумулятора, моторного масла и аксессуаров для автомобиля под ваши требования. </div>
-                                </a>
-                            </li>
-                              <li class="service__item">
-                                <a href="#" class="service__link">
-
-                                     <div class="service__link-image-wrapper icons-wrapper">
-                                        <div class="icons-wrapper__bg">
-                                             <span class="icons-wrapper__arrow">
-                                                <svg width="40" height="20" viewBox="0 0 40 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.32926 12L39.9993 12V8L7.32901 8L12.241 2.72627L9.31401 0L1.26965 8.63673L7.62939e-06 9.99987L1.26965 11.363L9.31401 19.9997L12.241 17.2735L7.32926 12Z" fill="white"/>
-                                                </svg>
-                                             </span>
-                                            <span class="icons-wrapper__rectangle">
-                                               <svg width="76" height="48" viewBox="0 0 76 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <rect x="2" y="10" width="72" height="36" stroke="white" stroke-width="4"/>
-                                                <rect x="20" y="2" width="36" height="8" stroke="white" stroke-width="4"/>
-                                                <rect opacity="0.5" x="6" y="4" width="6" height="6" stroke="white" stroke-width="4"/>
-                                                <rect opacity="0.5" x="64" y="4" width="6" height="6" stroke="white" stroke-width="4"/>
-                                                </svg>
-
-                                            </span>
-                                           <span class="icons-wrapper__arrow">
-                                                <svg width="40" height="20" viewBox="0 0 40 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M32.6701 12L0 12V8L32.6703 8L27.7583 2.72627L30.6853 0L38.7297 8.63673L39.9993 9.99987L38.7297 11.363L30.6853 19.9997L27.7583 17.2735L32.6701 12Z" fill="white"/>
-                                                </svg>
-                                           </span>
-                                        </div>
-                                    </div>
-
-
-
-                                    <h3 class="service__link-title h4">Обмен старого аккумулятора на новый</h3>
-                                    <div class="service__link-description">Принесите нам старую АКБ для легкового автомобиля, и мы предоставим Вам скидку на новый аккумулятор!</div>
-                                </a>
-                            </li>
-                              <li class="service__item">
-                                <a href="#" class="service__link">
-                                    <div class="service__link-image-wrapper icons-wrapper">
-                                        <div class="icons-wrapper__bg">
-                                            <div class="icons-wrapper__square">
-                                                <span class="line-1 line"></span>
-                                                <span class="line-2 line"></span>
-                                                <span class="line-3 line"></span>
-                                                <span class="line-4 line"></span>
-                                                <span class="line-5 line"></span>
-                                            </div>
-                                           <span class="icons-wrapper__line"></span>
-                                        </div>
-                                    </div>
-                                    <h3 class="service__link-title h4">Бесплатная диагностика аккумулятора</h3>
-                                    <div class="service__link-description">Приезжайте к нам и мы бесплатно проведём диагностику вашего аккумулятора!</div>
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="service__images">
-                            <div class="service__images-wrapper">
-                            <span class="icon triangle-1">
-                            <svg width="66" height="67" viewBox="0 0 66 67" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M17.6711 0.825003L65.4362 48.5901L0.187886 66.0733L17.6711 0.825003Z" fill="#C53720"/>
-                            </svg>
-                            </span>
-                            <span class="icon triangle-2">
-                                <svg width="127" height="120" viewBox="0 0 127 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M126.213 21.4106L45.583 119.669L0.803552 0.712411L126.213 21.4106Z" fill="#C53720"/>
-                                </svg>
-                            </span>
-                            <span class="icon triangle-3">
-                                <svg width="157" height="143" viewBox="0 0 157 143" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g filter="url(#filter0_f_37_56)">
-                                <path d="M24.25 24.8578L132.503 24.8578L78.3766 118.608L24.25 24.8578Z" fill="#C53720"/>
-                                </g>
-                                <defs>
-                                <filter id="filter0_f_37_56" x="0.25" y="0.857666" width="156.253" height="141.75" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-                                <feGaussianBlur stdDeviation="12" result="effect1_foregroundBlur_37_56"/>
-                                </filter>
-                                </defs>
-                                </svg>
-                            </span>
-                            <span class="icon triangle-4">
-                                <svg width="71" height="78" viewBox="0 0 71 78" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g filter="url(#filter0_f_37_59)">
-                                <path d="M60.3131 10.5943L57.7629 67.1258L10.0803 36.6515L60.3131 10.5943Z" fill="#C53720"/>
-                                </g>
-                                <defs>
-                                <filter id="filter0_f_37_59" x="0.0803223" y="0.59436" width="70.2328" height="76.5314" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-                                <feGaussianBlur stdDeviation="5" result="effect1_foregroundBlur_37_59"/>
-                                </filter>
-                                </defs>
-                                </svg>
-                            </span>
-                            <span class="icon triangle-5">
-                                <svg width="202" height="212" viewBox="0 0 202 212" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g filter="url(#filter0_f_37_60)">
-                                <path d="M167.313 177.564L34.8959 121.59L149.579 34.901L167.313 177.564Z" fill="#C53720"/>
-                                </g>
-                                <defs>
-                                <filter id="filter0_f_37_60" x="0.895874" y="0.900879" width="200.417" height="210.663" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-                                <feGaussianBlur stdDeviation="17" result="effect1_foregroundBlur_37_60"/>
-                                </filter>
-                                </defs>
-                                </svg>
-                            </span>   
-                            </div>
-                        </div>
-                    </div>
-                    <button type="button" class="button service__body-button button-large">Задать вопрос</button>
-                </div>
-            </div>
-            
         </section>
         <section class="section">
             <div class="section__inner container">
@@ -859,7 +691,7 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" style="display:none">
         <div class="footer__inner container">
             <div class="footer__body grid grid--6">
                 <div class="footer__column">

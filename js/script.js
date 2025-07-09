@@ -5,7 +5,7 @@
 
 
   function updateHeaderClass() {
-    if (window.scrollY > 60) {
+    if (window.scrollY > 100) {
       header.classList.remove('transparent');
       header.classList.add('solid');
       header__inner.classList.remove('flex-column');
