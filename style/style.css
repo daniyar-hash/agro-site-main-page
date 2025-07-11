@@ -714,7 +714,7 @@ h4, .h4 {
 .banner__list-item {
   position: relative;
   width: 100%;
-  height: 300px;
+  height: 400px;
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -726,7 +726,6 @@ h4, .h4 {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.3);
 }
 .banner__list-item.banner--1 {
   background: url("../../../agro-site-main-page/img/banner-5.jpg") center/cover no-repeat;
@@ -738,11 +737,12 @@ h4, .h4 {
 }
 .banner__list-item.banner--3 {
   background-image: url("../../../agro-site-main-page/img/banner-3.jpg");
-  background-position: bottom;
+  background-position: 0 50%;
 }
 .banner__list-item.banner--4 {
-  background-image: url("../../../agro-site-main-page/img/banner-4.jpg");
+  background-image: url("../../../agro-site-main-page/img/banner-4.png");
   background-position: center;
+  background-position: 0 60%;
 }
 .banner__list-item {
   display: none;
@@ -1954,8 +1954,8 @@ h4, .h4 {
   content: "";
   position: absolute;
   inset: 0;
-  background: url("../img/footer/footer-bg.jpg") center/cover no-repeat;
-  opacity: 0.2;
+  background: url("../img/footer/footer-bg.png") center/cover no-repeat;
+  opacity: 0.3;
   z-index: -1;
 }
 .footer:after {
@@ -2101,15 +2101,29 @@ h4, .h4 {
   height: 300px;
   opacity: 0.8;
   border-radius: 20px;
+  transition-duration: var(--transition-duration);
+}
+@media (hover: hover) {
+  .categories__item:hover {
+    scale: 1.1;
+  }
+}
+@media (hover: none) {
+  .categories__item:active {
+    scale: 1.1;
+  }
 }
 .categories__item:first-child {
-  background: url("../img/category/pestytsidy.jpg") center/cover no-repeat;
+  background: url("../img/category/1.png") 100% 0/contain no-repeat;
+  background-color: lightgreen;
 }
 .categories__item:nth-child(2) {
-  background: url("../img/category/udobreniya.jpg") center/cover no-repeat;
+  background: url("../img/category/2.png") 120% 70%/200px no-repeat;
+  background-color: lightgreen;
 }
 .categories__item:nth-child(3) {
-  background: url("../img/category/prochee.jpg") center/cover no-repeat;
+  background: url("../img/category/3.png") 100% -50%/300px no-repeat;
+  background-color: rgb(183, 209, 224);
 }
 
 .category {
