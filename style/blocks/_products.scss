@@ -41,9 +41,12 @@
     &__images{
 
         &-list {
-            gap:24px;
-            grid-template-rows: 290px;
-            grid-template-columns: repeat(4, 250px);
+           
+            gap:20px;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            grid-auto-rows: 240px;
+         
+
 
 
             @include mobile-s{
@@ -54,6 +57,7 @@
         }
 
         &-item{
+           
 
             &:focus-within .products__images-hover{
 
@@ -80,14 +84,19 @@
 
         &-link{
             position: relative;
-            display: inline-flex;
+         //   display: inline-flex;
         
         }
 
         &-image{
-            @include tablet{
-                height: auto;
-            }
+
+            width: 100%;
+            height: 100%;
+          //  object-fit: cover; /* заполнит весь li, обрежет лишнее */
+            display: block; /* убирает лишние отступы снизу у img */
+            // @include tablet{
+            //     height: auto;
+            // }
         }
         &-title{
 
@@ -97,6 +106,11 @@
         }
 
         &-button{
+            width: 100%;
+            height: 40px;
+            padding-block: 10px;
+            padding-inline: 0;
+
             @include mobile{
                 width: 100%;
                 padding-inline: 0;
@@ -120,8 +134,9 @@
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
-            padding-top: 160px;
+            padding-top: 100px;
             padding-bottom: 35px;
+            padding-inline: 5px;
             width: 100%;
             height: 100%;
             background-color: rgba($color: #000000, $alpha: .8);
@@ -130,6 +145,8 @@
             visibility: hidden;
             pointer-events: none;
             transition: opacity 0.3s ease;
+
+
 
 
             @include tablet{

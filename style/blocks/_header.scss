@@ -109,6 +109,20 @@
             order: 1;
 
 
+                svg *[fill]{
+          
+                  fill: var(--color-green-light);
+                }
+
+                svg path.red-line{
+                    fill: var(--color-green-light);
+       
+                }
+
+
+
+
+
        
         }
      
@@ -271,15 +285,16 @@
 
     }
 
-    &__button{
+    &__call-link{
      
         font-size: 12px;
         margin-right: 23px;
-        // line-height: 1.35;
         padding-block: 8px;
         align-self: center;
         margin-left: auto;
         flex-shrink: 0;
+        width: 168px;
+        height: 40px;
         
 
           @include tablet{

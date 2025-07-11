@@ -153,10 +153,12 @@
         }
     }
 
-    &__button{
+    &__call-link{
         padding-block: 10px;
         font-size: 12px;
         line-height: 1;
+        width: 176px;
+        height: 40px;
 
         @include desktop{
             width: 100%;

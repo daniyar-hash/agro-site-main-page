@@ -95,11 +95,13 @@
 
 .logo{
       svg *[fill]{
-            fill:var(--color-green-alt);
+          fill:var(--color-green-alt);
+        
         }
 
         svg path.red-line{
-            fill:var( --color-green-alt);
+        
+           fill:var( --color-green-alt);
         }
 
 

@@ -79,6 +79,7 @@
 
 
        &__list-item{
+        position: relative;
         width: 100%;
         height: 300px;
         background-size: cover;
@@ -89,14 +90,26 @@
         text-transform: uppercase;
 
 
+        &::after{
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-color: rgba($color: #000000, $alpha: 0.3);
+        }
+
+
 
 
         &.banner--1{
-            background-image: url('../../../agro-site-main-page/img/banner-1.jpeg');
+            background: url('../../../agro-site-main-page/img/banner-5.jpg') center/cover no-repeat;
+            background-position: 100% 30%;
+
+         
         }
 
          &.banner--2{
-            background-image: url('../../../agro-site-main-page/img/banner-2.jpeg');
+            background: url('../../../agro-site-main-page/img/banner-6.jpg') center/cover no-repeat;
+              background-position: 50% 35%;
         }
 
          &.banner--3{
