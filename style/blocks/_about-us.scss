@@ -16,8 +16,8 @@
 
     &__image-wrapper{
         position: relative;
-        width: 360px;
-        height: 347px;
+        width: 250px;
+        height: 230px;
         flex-shrink: 0;
 
         @include mobile{
@@ -42,7 +42,7 @@
 
 
         &__info{
-        max-width: 744px;
+        max-width: 550px;
         border: var(--border);
         font-size: 16px;
         min-height: 255px;

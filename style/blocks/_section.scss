@@ -1,6 +1,6 @@
 .section{
 
-   --rowGapBlocks:74px;
+   --rowGapBlocks:15px;
    padding-top:var(--section-base-padding-y);
    padding-bottom: var(--section-large-padding-y);
 
@@ -19,21 +19,23 @@
   //  }
 
 
-   &:has(.category){
+   &:has(.category),
+     &:has(.reviews)
+   {
        color: var(--color-dark);
    }
 
    &:has(.about-us){
         background: linear-gradient(rgba(14,14,14,0.6), rgba(14,14,14,0.6)),
                 url("../img/about-us/bg.png") 0 0 / cover no-repeat;
-        min-height: 670px;
+        min-height: 500px;
    }
 
 
 
    &:has(.news){
 
-        min-height: 800px;
+        min-height: 600px;
         background-color: var(--color-gray);
         color:var(--color-dark);
 
@@ -53,7 +55,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    row-gap: 32px;
+    row-gap: 5px;
 
 
      }

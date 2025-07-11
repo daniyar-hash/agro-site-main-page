@@ -1,0 +1,118 @@
+.reviews{
+
+    align-items: center;
+    justify-content: center;
+
+
+    @include mobile{
+        row-gap: 40px;
+    }
+
+
+    &__list{
+
+        display: flex;
+        gap: 24px;
+        align-items: center;
+        width: 100%;
+        padding-inline: 100px;
+        
+        @include mobile{
+            gap: 12px;
+        }
+
+        @include mobile-s{
+            gap: 30px;
+            width: unset;
+        }
+
+    }
+
+
+    &__item{
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+        height: 100%;
+        padding-left: 20px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+    }
+
+
+       &__body{
+
+         padding: 12px 20px 16px;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         flex-grow: 1;
+  
+
+         @include mobile{
+            padding: 6px 10px;
+         }
+        
+
+
+         time{
+            font-size: 12px;
+            font-style: italic;
+
+         }
+       
+
+       &-title{
+        color:  var(--color-light);
+        text-transform: uppercase;
+
+      
+       }
+
+  
+
+    }
+
+    &__avatar{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        overflow: hidden;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    
+
+
+        &-image{
+           width: 100%;
+           height: 100%;
+           object-fit: cover;
+        }
+    }
+
+    &__description{
+        font-size: 12px;
+        max-width: 200px;
+    }
+
+}
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+    
+
