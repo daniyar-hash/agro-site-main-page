@@ -123,12 +123,8 @@ body {
 /**
   Приводим к единому цвету svg-элементы
  */
-svg *[fill] {
+svg:not(.preserve-fill) *[fill] {
   fill: currentColor;
-}
-
-svg *[stroke] {
-  stroke: currentColor;
 }
 
 /**
@@ -480,7 +476,6 @@ h4, .h4 {
   justify-content: center;
   align-items: center;
   display: flex;
-  height: 18px;
 }
 @media (hover: hover) {
   .header__catalog-link:hover {
@@ -1961,22 +1956,24 @@ h4, .h4 {
     row-gap: 8px;
   }
 }
-.footer-contacts__item:first-child {
-  margin-bottom: 12px;
-}
-.footer-contacts__item:nth-child(2) {
-  margin-bottom: 20px;
+.footer-contacts__item {
+  margin-bottom: 10px;
+  text-transform: lowercase;
 }
 .footer-contacts__link {
   display: flex;
+  justify-content: start;
+  align-items: center;
   -moz-column-gap: 8px;
        column-gap: 8px;
 }
-.footer-contacts__link svg *[fill] {
+.footer-contacts__link .phone-icon *[fill],
+.footer-contacts__link .email-icon *[fill] {
   fill: var(--color-green-alt);
 }
-.footer-contacts__link.mail {
-  text-transform: lowercase;
+.footer-contacts__link.instagramm {
+  -moz-column-gap: 0;
+       column-gap: 0;
 }
 .footer__call-link {
   padding-block: 10px;

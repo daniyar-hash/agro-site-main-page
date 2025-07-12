@@ -129,26 +129,31 @@
 
 
     &-contacts__item{
-        &:first-child{
-            margin-bottom: 12px;
-        }
 
-        &:nth-child(2){
-            margin-bottom: 20px;
-        }
+        margin-bottom: 10px;
+        text-transform:lowercase;
+        // &:first-child{
+        //     margin-bottom: 12px;
+        // }
+
+        // &:nth-child(2){
+        //     margin-bottom: 20px;
+        // }
     }
     &-contacts__link{
         display: flex;
+        justify-content: start;
+        align-items: center;
         column-gap: 8px;
 
-        svg *[fill]{
+        .phone-icon *[fill],
+        .email-icon *[fill]{
             fill:var( --color-green-alt);
         }
 
-
-
-        &.mail{
-            text-transform:lowercase;
+   
+        &.instagramm{
+            column-gap: 0;
         }
     }
 
