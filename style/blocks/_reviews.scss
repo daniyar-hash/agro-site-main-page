@@ -16,6 +16,8 @@
         align-items: center;
         width: 100%;
         padding-inline: 100px;
+        scroll-snap-type: x mandatory;
+        overflow-x: scroll;
         
         @include mobile{
             gap: 12px;
@@ -36,6 +38,9 @@
         height: 100%;
         padding-left: 20px;
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+        scroll-snap-align: start;
+        min-width: 400px;
 
     }
 
