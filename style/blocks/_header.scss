@@ -316,6 +316,11 @@
         @include flex-center(true);
         margin-right: 10px;
 
+
+        @include hover{
+            opacity: 0.8;
+        }
+
    
         svg path{
             &.icon-whatsapp-1{

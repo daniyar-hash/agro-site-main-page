@@ -84,6 +84,7 @@
 
         &-link{
             position: relative;
+       
          //   display: inline-flex;
         
         }
@@ -92,11 +93,10 @@
 
             width: 100%;
             height: 100%;
-          //  object-fit: cover; /* заполнит весь li, обрежет лишнее */
+            border-radius: 10px;
             display: block; /* убирает лишние отступы снизу у img */
-            // @include tablet{
-            //     height: auto;
-            // }
+
+      
         }
         &-title{
 
@@ -139,12 +139,13 @@
             padding-inline: 5px;
             width: 100%;
             height: 100%;
-            background-color: rgba($color: #000000, $alpha: .8);
+            background-color: rgba($color: #000000, $alpha: .7);
             opacity: 0;
             display: flex;
             visibility: hidden;
             pointer-events: none;
             transition: opacity 0.3s ease;
+            border-radius: 10px;
 
 
 

@@ -526,6 +526,16 @@ h4, .h4 {
   display: inline-flex;
   margin-right: 10px;
 }
+@media (hover: hover) {
+  .header__social-link:hover {
+    opacity: 0.8;
+  }
+}
+@media (hover: none) {
+  .header__social-link:active {
+    opacity: 0.8;
+  }
+}
 .header__social-link svg path.icon-whatsapp-1 {
   fill: #cfd8dc;
 }
@@ -1245,6 +1255,7 @@ h4, .h4 {
 .products__images-image {
   width: 100%;
   height: 100%;
+  border-radius: 10px;
   display: block; /* убирает лишние отступы снизу у img */
 }
 .products__images-title {
@@ -1284,12 +1295,13 @@ h4, .h4 {
   padding-inline: 5px;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.7);
   opacity: 0;
   display: flex;
   visibility: hidden;
   pointer-events: none;
   transition: opacity 0.3s ease;
+  border-radius: 10px;
 }
 @media (max-width: 1023px) {
   .products__images-hover {
