@@ -184,6 +184,11 @@
                                 Контакты
                             </a>
                         </li>
+                        <li class="header__menu-item">
+                            <a href="#" class="header__menu-link">
+                                Галерея
+                            </a>
+                        </li>
                     </ul>
                     </nav>
                     <a href="tel:+77055774243" class="header__call-link button hidden-mobile ">
@@ -327,6 +332,7 @@
                                 <div class="products__images-hover">
                                     <h3 class="products__images-title h4">Аккумуляторы</h3>
                                     <button class="products__images-button button button-medium">Заказать онлайн</button>
+                                    <button class="products__images-button button button-medium open-modal-video">Отзыв о товаре</button>
                                 </div>    
                             </a>
                         </li>
@@ -737,6 +743,22 @@
             </div>
         </div>
     </footer>
+
+
+    <section class="modal modal-video">
+        <div class="modal__inner">
+            
+            <video id="video" width="500" height="500"controls="controls" poster="video/test.jpg">
+            <!-- <source src="video/duel.ogv" type='video/ogg; codecs="theora, vorbis"'> -->
+            <source src="video/test.mp4" type='video/mp4'>
+            <!-- <source src="video/duel.webm" type='video/webm; codecs="vp8, vorbis"'> -->
+            </video>
+
+            <button class="modal__button modal-close" type="button">
+            <span class="visually-hidden">Закрыть модальное окно</span>
+            </button>
+        </div>
+    </section>
    
 <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
 <form class="mobile-overlay__button-close-wrapper" method="dialog">
