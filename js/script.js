@@ -2,14 +2,32 @@
   const header__inner = document.querySelector('.header__inner');  
   const header__logo = document.querySelector('.header__logo');
   const header__container = document.querySelector('.header__container');
-  const modalVideo = document.querySelector('.open-modal-video');
-  const modal_section = document.querySelector('.modal');
+  const btnModalVideo = document.querySelector('.open-modal-video');
+  const popup = document.querySelector('.modal');
+  const btnModalClose = document.querySelector('.modal-close');
+  const video = document.getElementById('video');
 
 
-  modalVideo.addEventListener("click", (e)=>{
-      modal_section.classList.toggle('modal-show');
-      modal_section.style.display = "block";
-      modal_section.querySelector('#video').play();
+
+
+  btnModalVideo.addEventListener("click", (e)=>{
+      e.preventDefault();
+      popup.classList.add('modal-show');
+      popup.style.display = "block";
+      popup.querySelector('#video').play();
+  })
+
+    btnModalClose.addEventListener("click", (e)=>{
+
+
+     e.preventDefault();
+    popup.classList.remove('modal-show');
+    
+
+      video.pause();
+          video.currentTime = 0;
+
+
   })
 
   function updateHeaderClass() {
@@ -32,8 +50,25 @@
     }
   }
 
+
+
+
   // Проверка при загрузке страницы
    window.addEventListener('load', updateHeaderClass);
 
   // Проверка при скролле
   window.addEventListener('scroll', updateHeaderClass);
+
+
+        //  window.addEventListener("keydown", function(evt) {
+        //     if (evt.keyCode === 27) {
+        //             evt.preventDefault();
+
+        //             if(popup.classList.contains("modal-show")){
+        //                 popup.classList.remove("modal-show");
+        //                 popup.classList.remove("modal-error");
+
+        //             }
+              
+
+        //     }

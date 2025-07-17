@@ -1950,9 +1950,38 @@ h4, .h4 {
   left: 50%;
   margin-left: -300px;
 }
-.modal.modal-show video {
-  width: 600px;
-  height: 600px;
+.modal__inner {
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+.modal__button {
+  position: absolute;
+  top: 20%;
+  left: 100%;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+}
+.modal__button::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 4px;
+  background-color: var(--color-gray);
+  rotate: 45deg;
+}
+.modal__button::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 4px;
+  aspect-ratio: 1;
+  background-color: var(--color-gray);
+  rotate: -45deg;
 }
 
 .footer {
