@@ -7,6 +7,48 @@
   const btnModalClose = document.querySelector('.modal-close');
   const video = document.getElementById('video');
 
+  const bannerList = document.querySelector(".banner__list");
+  const bannerSlides = document.querySelectorAll(".banner__list-item");
+  
+  let currentSlide = 0;
+
+  function showSlide(index){
+      bannerSlides.forEach((item, i)=>{
+        item.classList.toggle("active", i === index);
+
+      });
+  }
+
+  function nextSlide(){
+
+    currentSlide = (currentSlide + 1)%bannerSlides.length;
+    showSlide(currentSlide);
+  }
+
+  setInterval(nextSlide, 3000);
+
+  showSlide(currentSlide);
+
+let index = 0;
+let total = 3;
+let interval = setInterval(changeSlide, 3000);
+
+function changeSlide() {
+  document.getElementById(`btn${index + 1}`).checked = true;
+  index = (index + 1) % total;
+}
+
+// Отключить автослайдер при ручном выборе
+document.querySelectorAll('.pagination__label').forEach((label, i) => {
+  label.addEventListener('click', () => {
+    clearInterval(interval);
+    document.getElementById(`btn${i + 1}`).checked = true;
+    index = i;
+  });
+});
+
+
+
 
 
 
@@ -50,6 +92,9 @@
       
     }
   }
+
+
+
 
 
 

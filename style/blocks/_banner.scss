@@ -8,6 +8,8 @@
           --section-base-padding-y:0;
          --section-large-padding-y:0;
 
+            min-height: 400px;
+
 
     &__body{
       position: relative;
@@ -21,46 +23,24 @@
 
         }
 
-             #btn1:checked ~.banner__list li:first-child
+             #btn1:checked ~.banner__list li:first-child,
+             #btn2:checked ~.banner__list li:nth-child(2),
+             #btn3:checked ~.banner__list li:nth-child(3),
+             #btn4:checked ~.banner__list li:nth-child(4)
+
             { 
                 display: block;
 
             }
 
-             #btn2:checked ~.banner__list li:nth-child(2)
-            { 
-                display: block;
-
-            }
-            #btn3:checked ~.banner__list li:nth-child(3)
-            { 
-                display: block;
-
-            }
-            #btn4:checked ~.banner__list li:nth-child(4)
-            { 
-                display: block;
-
-            }
-
-            #btn1:checked ~.pagination .pagination__list li:first-child label[for="btn1"]{
-                border-color: var( --color-green-alt);
-            }
-
-             #btn2:checked ~.pagination .pagination__list li:nth-child(2) label[for="btn2"]{
-                border-color: var( --color-green-alt);
-            }
-
-            #btn3:checked ~.pagination .pagination__list li:nth-child(3) label[for="btn3"]{
-                border-color: var( --color-green-alt);
-            }
-          
-            #btn4:checked ~.pagination .pagination__list li:nth-child(4) label[for="btn4"]{
-                border-color: var( --color-green-alt);
-            }
-
-                    
+            #btn1:checked ~.pagination .pagination__list li:first-child label[for="btn1"],
+            #btn2:checked ~.pagination .pagination__list li:nth-child(2) label[for="btn2"],
+            #btn3:checked ~.pagination .pagination__list li:nth-child(3) label[for="btn3"],
+            #btn4:checked ~.pagination .pagination__list li:nth-child(4) label[for="btn4"]
             
+            {
+                border-color: var( --color-green-alt);
+            }
 
 
         @include tablet{
@@ -76,10 +56,16 @@
         }
     }
 
-
+        &__list{
+            position: relative;
+            height: 400px;
+        }
 
        &__list-item{
-        position: relative;
+        position: absolute;
+        top: 0;
+        left: 0;
+        inset: 0;
         width: 100%;
         height: 400px;
         background-size: cover;
@@ -88,6 +74,12 @@
         display: block;
         padding-top: 150px;
         text-transform: uppercase;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+
+        &.active{
+            opacity: 1;
+        }
 
 
         &::after{
@@ -128,9 +120,9 @@
 
     }
 
-    &__list-item{
-        display: none;
-    }
+    // &__list-item{
+    //     display: none;
+    // }
 
 
     &__content{
