@@ -21,11 +21,12 @@
 
 
      e.preventDefault();
-    popup.classList.remove('modal-show');
-    
+     popup.classList.remove('modal-show');
+    popup.style.display = "none";
+
 
       video.pause();
-          video.currentTime = 0;
+      video.currentTime = 0;
 
 
   })
