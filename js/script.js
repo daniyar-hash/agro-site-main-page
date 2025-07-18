@@ -10,7 +10,6 @@
   const bannerList = document.querySelector(".banner__list");
   const bannerSlides = document.querySelectorAll(".banner__list-item");
   
-  let currentSlide = 0;
 
   function showSlide(index){
       bannerSlides.forEach((item, i)=>{
@@ -19,31 +18,36 @@
       });
   }
 
-  function nextSlide(){
 
-    currentSlide = (currentSlide + 1)%bannerSlides.length;
-    showSlide(currentSlide);
-  }
 
-  setInterval(nextSlide, 3000);
+  //--------------------///
 
+   let index = 0;
+   let total = 4;
+   let currentSlide = 0;
+
+
+  function changeSlide() {
+  index = (index + 1) % total;  // 1
+  currentSlide = index; // 1
+
+  
   showSlide(currentSlide);
-
-let index = 0;
-let total = 3;
-let interval = setInterval(changeSlide, 3000);
-
-function changeSlide() {
-  document.getElementById(`btn${index + 1}`).checked = true;
-  index = (index + 1) % total;
+  document.getElementById(`btn${index + 1}`).checked = true; // 1
 }
 
-// Отключить автослайдер при ручном выборе
+
+
+let interval = setInterval(changeSlide, 3000);
 document.querySelectorAll('.pagination__label').forEach((label, i) => {
   label.addEventListener('click', () => {
     clearInterval(interval);
-    document.getElementById(`btn${i + 1}`).checked = true;
+    console.log(i)
     index = i;
+    currentSlide = i;
+    showSlide(currentSlide);
+    document.getElementById(`btn${i + 1}`).checked = true;
+    interval = setInterval(changeSlide, 3000);
   });
 });
 
@@ -64,7 +68,7 @@ document.querySelectorAll('.pagination__label').forEach((label, i) => {
 
      e.preventDefault();
      popup.classList.remove('modal-show');
-    popup.style.display = "none";
+     popup.style.display = "none";
 
 
       video.pause();
